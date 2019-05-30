@@ -1,6 +1,6 @@
-# VueDemo
+# Snake
 
-> My epic Nuxt.js project
+> Try to avoid hitting the walls or eating yourself!
 
 ## Build Setup
 
