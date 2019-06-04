@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <div class="game-screen">
-      <div class="game-title">
-        Snake
-      </div>
-      <Box v-for="option in options" :key="option" class="box game-option">
-        {{ option }}
-      </Box>
+      <div class="game-title">Snake</div>
+      <Box
+        class="button column is-primary is-large"
+        style="margin-bottom: 16px;"
+        >Play</Box
+      >
+      <Box class="button column is-primary is-large">Help</Box>
     </div>
-    <div class="demo-game"></div>
   </div>
 </template>
 
@@ -25,41 +25,29 @@ export default {
         scale: 1.1
       }
     })
-  },
-  data() {
-    return {
-      options: ['Play', 'Help']
-    }
   }
 }
 </script>
 
 <style scoped>
 .container {
-  padding: 16px;
+  padding: 16pt;
   margin: 0;
-  max-width: 100%;
+  min-width: 100%;
+  width: 50%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .game-title {
   font-size: 56pt;
   font-weight: bold;
-  margin-bottom: 16pt;
-}
-.game-option {
-  width: 50%;
-  margin: 16pt 25%;
+  margin-bottom: 8pt;
 }
 .game-screen {
+  width: 33%;
   text-align: center;
-  flex: 1;
-}
-.demo-game {
-  flex: 1;
-}
-.box {
-  background-color: palegoldenrod;
+  align-items: center;
 }
 </style>
-``

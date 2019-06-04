@@ -26,6 +26,10 @@ html {
   margin: 0;
 }
 
+body {
+  height: 100%;
+}
+
 .button--green {
   display: inline-block;
   border-radius: 4px;
